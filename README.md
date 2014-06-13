@@ -1,4 +1,4 @@
 rest-tickets-app
 ================
 
-RestTickets SPA node.
+RestTickets Application Server.
