@@ -1,25 +1,5 @@
-# Bootstrap
-app/bootstrap*
-
-# Symfony directories
-vendor/*
-*/logs/*
-*/cache/*
-web/uploads/*
-web/bundles/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
-
-# Configuration files
-app/config/parameters.ini
-app/config/parameters.yml
-
-# Composer
-composer.phar
-
-# IDEs
-.idea/*
-*.sw*
-
-# DevOps
-.vagrant/*
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
