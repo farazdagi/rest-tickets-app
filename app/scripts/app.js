@@ -83,6 +83,9 @@ angular
       }
     };
   })
+  .factory('Event', function ($resource) {
+    return $resource('https://api.rest.tickets/secured/events/:id');
+  })
   .config(function ($httpProvider) {
     $httpProvider.interceptors.push('authInterceptor');
   })
@@ -95,6 +98,10 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/events', {
+        templateUrl: 'views/events.html',
+        controller: 'EventsCtrl'
       })
       .when('/login', {
         templateUrl: 'views/login.html',

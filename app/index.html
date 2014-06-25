@@ -25,6 +25,7 @@
       <div class="header" ng-controller="NavCtrl">
         <ul class="nav nav-pills pull-right">
           <li ng-class="{active: activePath == '/'}"><a ng-href="#">Home</a></li>
+          <li ng-class="{active: activePath == '/events'}"><a ng-href="#/events">Events</a></li>
           <li ng-class="{active: activePath == '/about'}"><a ng-href="#/about">About</a></li>
           <li ng-show="isAuthenticated" ng-class="{active: activePath == '/login'}"><a ng-href="#/logout">Logout</a></li>
           <li ng-hide="isAuthenticated" ng-class="{active: activePath == '/login'}"><a ng-href="#/login">Login</a></li>
